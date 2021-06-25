@@ -1,0 +1,268 @@
+
+/* ZEROING */
+
+footer {
+  background: #F53838;
+  color: #dbdbdb;
+  font-size: 25px;
+  height: 150px;
+  margin-top: 350px;
+  margin: 0 auto;
+  text-align: justify;
+
+}
+
+img {
+  color: #fff;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", sans-serif;
+  }
+  
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+#navigation{
+  color: #000;
+    text-decoration: none;
+}
+
+  /* —---— */
+  /* CONTAINER */
+  .container {
+    margin: 0 auto;
+    max-width: 1125px;
+    padding: 0 15px;
+  }
+  
+  /* —---— */
+  /* HEADER */
+  .header-inner {
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  
+  .logo img {
+    margin-right: 12px;
+  }
+  
+  nav a {
+    color: #4F5665;
+    margin-right: 40px;
+    transition: 0.2s linear;
+  }
+  nav a:hover {
+    border-bottom: 2px solid #000;
+  }
+  
+  nav a:last-child {
+    margin-right: 0;
+  }
+  
+  /* MAIN */
+  .main {
+      margin-top: 24px;
+      margin-bottom: 500px;
+    }
+    
+    .main-inner {
+      display: flex;
+      align-items: center;
+
+    }
+    
+    .main-title {
+      margin-right: 42px;
+    }
+    
+    .main-title p:first-child {
+      font-weight: 100px;
+      font-size: 52px;
+      color: #000;
+    }
+    .main-title p{
+      font-size: 44px;
+      color: #4F5665;
+      margin: 0px;
+    }
+    
+    .btn-get-started {
+      transition: 0,5s linear;
+      background-color: #F53838;
+      font-weight: 700;
+      padding: 17px 77px;
+      color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(245, 56, 56, 0.25);
+      position: relative;
+      top: 35px;
+    }
+    
+    .btn-get-started:hover {
+      background-color: #fff;
+      color: #000;
+      box-shadow: none;
+      border: 1px solid #F53838;
+    }
+    
+    .main-img img {
+      position: relative;
+      right: -40px;
+      width: 450px;
+      height: 382px;
+    }
+  .article-list-img img{
+      margin-top: 15px;
+    border-radius: 25px;
+  }
+  .article-list-img {
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  .article-list-biba {
+      margin-left: 25px;
+  }
+  
+  .article-list-biba img {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 25px;
+  }
+  
+  .article-list-img a {
+    position: relative;
+    right: 500px;
+    top: 55px;
+  }
+  .article-list-biba a{
+    color: #4F5665;
+    margin-right: 40px;
+    transition: 0.2s linear;
+  }
+  
+  .article-list-biba a:hover {
+    border-bottom: 2px solid #000;
+  }
+
+  .article-list-biba a:last-child {
+    margin-right: 0;
+  }
+
+    .palka {
+      display: flex;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      width: 1170px;
+      height: 3px;
+      left: 135px;
+      top: 323px;
+      background: #F2F2F2;
+    }
+    .quote {
+      display: flex;
+      margin-top: 220px;
+      ba
+    }
+blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  font-size: 17.5px;
+  border-left: 5px solid #2c3034;
+  color: #2c3034;
+}
+.blockquote-reverse, blockquote.pull-right {
+  padding-right: 15px;
+  padding-left: 0;
+  text-align: right;
+  border-right: 5px solid #eee;
+  border-left: 0;
+}
+
+
+
+.text-box {
+    margin-left: 15px;
+	 margin-top: 42px;
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: rgba(240, 50, 50, 0.966);
+    color: rgb(248, 248, 248);
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: rgb(252, 144, 22);
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

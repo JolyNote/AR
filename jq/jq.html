@@ -1,0 +1,65 @@
+
+<DOCTYPEhtml>
+    <html>
+        <head>
+        <meta charset="utf-8" />
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <script src="jquery-1.8.2.min.js"></script>
+        <script>
+        $(function(){
+        // предварительная загрузка изображений
+        varklgd = $('<img />').attr('src','images/klngr.png');
+        varmsk = $('<img />').attr('src','images/msk.png');
+        varspb = $('<img />').attr('src','images/spb.png');
+                
+        $('div#imap> a').click(function(event){
+            varelId = $(this).attr('id');
+                
+            switch(elId){
+                case 'klgd' :
+                    $('#container:not(:has(img))').append(klgd);
+                    //elImgURI = img_props.klgd.uri;
+                break;
+                case 'spb' :
+                    $('#container:not(:has(img))').append(spb);
+                    //elImgURI = img_props.spb.uri;
+                break; 
+                case 'msk' :
+                    $('#container:not(:has(img))').append(msk);
+                    //elImgURI = img_props.msk.uri;
+                break;	
+                default: elImgURI = false;
+            }
+            
+            // ширинаконтейнера
+            varcontwidth = $('#container').width();
+            varcontheight = $('#container').height();
+            
+            varw_mrg = contwidth/2 + "px";
+            varh_mrg = contheight/2 + "px";
+        
+            $('#container').show();
+            $('#container').css({'margin-left':'-'+w_mrg});
+            event.preventDefault();
+        });
+        $('div#container').click(function(event){
+            $('#container img').remove();
+            $('#container').hide();
+            event.preventDefault();
+        });
+        
+        });
+        
+        </script>
+        <link rel="stylesheet" href="jq.css">
+        </head>
+        <body>
+        <div id="imap">
+            <a href="#" id="klgd">Калининград</a>
+            <a href="#" id="spb">Санкт-Петербург</a>
+            <a href="#" id="msk">Москва</a>
+        </div>
+        <div id="container"></div>
+        </body>
+    </html>

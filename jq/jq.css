@@ -1,0 +1,63 @@
+*{
+	margin:0;
+	padding:0;
+	font-size:100%;
+	border-collapse:collapse;
+}
+
+body{
+	font-family:Arial;
+	position:relative;
+}
+
+div#imap{
+	width:700px;
+	height:394px;
+	margin:0 auto 10px;
+	background:url(images/map_bg.png) no-repeat;
+	position:relative;
+}
+
+div#imapa{
+	position:absolute;
+	text-decoration:none;
+	background:url(images/b_sprite.png) no-repeat;
+	color:#000;
+	font-weight:bold;
+	padding-left:14px;
+	font-size:.7em;
+}
+
+div#imapa:hover{
+	background-position:0 -13px;
+}
+
+div#container{
+	display:none;
+	position:absolute;
+	margin:0 auto;
+	background:#fff;
+	padding:10px;
+	border:1px solid #999;
+	cursor:pointer;
+	top:50%;
+	left:50%;
+}
+
+a#klgd{
+	top:75px;
+	left:30px;
+}
+
+a#spb{
+	top:97px;
+	left:95px;
+
+}
+
+a#msk{
+	top:149px;
+	left:81px;
+}
+.js
+
